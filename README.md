@@ -14,6 +14,8 @@ Open `index.html` directly, or run `python -m http.server 8080 --bind 127.0.0.1`
 
 ### GitHub Pages
 
+The same website is also published at **https://ab-itteam.github.io/** from the `master` branch of [ab-itteam/ab-itteam.github.io](https://github.com/ab-itteam/ab-itteam.github.io). That repository has no custom domain, so the short GitHub URL continues to work directly. Changes pushed here update `ab-it.io`; update the organization-site copy separately when the website changes. Its README documents the files to copy and the existing site-verification tag to preserve.
+
 The workflow in `.github/workflows/pages.yml` publishes only the public website files whenever `main` is updated. GitHub Pages must use **GitHub Actions** as its source, with **ab-it.io** configured as the custom domain in repository Settings → Pages. With Actions deployment, the repository's `CNAME` file documents the intended domain; the domain must also be saved in Pages settings.
 
 Replace the old apex (`@`) A record pointing to `94.130.123.150` with these records (TTL 3600 is fine):
