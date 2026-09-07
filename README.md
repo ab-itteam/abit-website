@@ -6,6 +6,8 @@ Portfolio and company website for **Nick Meiremans**, freelance software develop
 
 Plain HTML, CSS and JavaScript. No dependencies, build step, external fonts, analytics or backend. All page content and navigation remain accessible without JavaScript.
 
+The visual direction is a playful independent studio: charcoal, lime, pink and violet, bold typography, tactile project cards, and an original generated mascot in `assets/mascot.png`. Motion is limited to decorative hover effects and a small heading accent; reduced-motion preferences are respected.
+
 ## Preview
 
 Open `index.html` directly, or run `python -m http.server 8080 --bind 127.0.0.1` in this directory and visit http://127.0.0.1:8080. The email copy button uses the Clipboard API on HTTPS or localhost and displays the address if copying is unavailable.
@@ -44,6 +46,7 @@ Upload these files to the public document root of your static host:
 - `favicon.svg`
 - `robots.txt`
 - `sitemap.xml`
+- `assets/` (include the entire directory)
 
 No server-side routing or build configuration is required. Serve over HTTPS. For hosts that require a build command, leave it empty and use the repository root as the publish directory; deploy only the public files above. Do not upload `.git`, `.idea`, development tools, or source documents.
 
